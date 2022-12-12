@@ -1,0 +1,79 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: ali rasouli, tpd, LIC=NQQMA-1TBTR-JJ36S-LI5PB-KDDAL-10KCH
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
+Toolchain Path:  C:\Program Files (x86)\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+H:\projects\TPD\Group\TEMP\STM32F429-DISC1 - 14010919\MDK-ARM\STM32F429-DISC1.uvprojx
+Project File Date:  12/10/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'C:\Program Files (x86)\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'STM32F429-DISC1'
+../Core/Src/main.c(298): warning: passing 'char [17]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+BSP_LCD_DisplayStringAtLineH(0," TPD Demo tester");
+                               ^~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32F429I-Discovery\stm32f429i_discovery_lcd1.h(207): note: passing argument to parameter 'ptr' here
+void     BSP_LCD_DisplayStringAtLineH(uint16_t Line, uint8_t *ptr);
+                                                              ^
+../Core/Src/main.c(303): warning: passing 'char [4]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+txt_printH("SET",3,11,200,35);
+           ^~~~~
+../Core/Src/main.c(154): note: passing argument to parameter here
+void txt_printH(uint8_t *, uint8_t, uint8_t, uint16_t, uint16_t);
+                         ^
+2 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=59636 RO-data=12372 RW-data=396 ZI-data=26068  
+FromELF: creating hex file...
+"STM32F429-DISC1\STM32F429-DISC1.axf" - 0 Error(s), 2 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.2.0.pack
+                ARM.CMSIS.4.2.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 3.40.0
+   * Component: DSP Version: 1.4.2
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.16.0.pack
+                Keil.STM32F4xx_DFP.2.16.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_STM32F429-DISC1
+  C:\Users\Ali\AppData\Local\Arm\Packs\ARM\CMSIS\4.2.0\CMSIS\Include
+  C:\Users\Ali\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.40.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+
+   * Component: ARM::CMSIS:DSP:1.4.2
+      Include file:  CMSIS\Include\arm_math.h
+      Library file:  CMSIS\Lib\ARM\arm_cortexM4lf_math.lib
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
