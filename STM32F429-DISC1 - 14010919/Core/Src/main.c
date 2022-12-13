@@ -375,10 +375,10 @@ txt_printH("SET",3,11,200,35);
 	}
 //mSD----------------------------------------------------------------------------
 //DSP---------------------------------------------------		
-										if ( f1.data_dump_flg == 0 ) {
-												CDC_Transmit_HS(stm_buf_DSP,6);
-										}
-										else	{}
+//										if ( f1.data_dump_flg == 0 ) {
+//												CDC_Transmit_HS(stm_buf_DSP,6);
+//										}
+//										else	{}
 //mSD write------------------------------------------------------------------										
 		res = f_write(&SDFile1, stm_buf_DSP, 6 , (void *)&byteswritten);
 		if((byteswritten == 0) || (res != FR_OK)) {
